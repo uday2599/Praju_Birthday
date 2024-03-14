@@ -6,7 +6,7 @@ const proceedButton = document.getElementById('proceedButton');
 const c = document.getElementById('c');
 
 const config = {
-  birthdate: 'Mar 14, 2024',
+  birthdate: 'Mar 13, 2024',
   name: 'Praju'
 };
 
