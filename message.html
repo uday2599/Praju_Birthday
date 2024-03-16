@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Messages</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            background-image: url('https://subtlepatterns.com/patterns/grey_wash_wall.png'); /* Subtle background pattern */
+        }
+
+        #header {
+            background-color: #128C7E;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        #messages-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .message-container {
+            opacity: 0;
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message {
+            padding: 15px;
+            border-radius: 10px;
+            word-wrap: break-word;
+            max-width: 70%;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .message.sent {
+            background-color: #DCF8C6;
+            color: #000;
+            float: right;
+            margin-left: 30%;
+        }
+
+        .message.sent:hover {
+            background-color: #c1f1a1;
+        }
+
+        .message.sent:before {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            margin-left: -10px;
+            border-color: transparent #DCF8C6 transparent transparent;
+            border-width: 10px;
+            left: 100%;
+            top: 8px;
+        }
+
+        .message.received {
+            background-color: #25D366;
+            color: #fff;
+            float: left;
+            margin-left: 0;
+        }
+
+        .message.received:hover {
+            background-color: #128C7E;
+        }
+
+        .message.received:before {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            margin-left: -10px;
+            border-color: transparent transparent transparent #25D366;
+            border-width: 10px;
+            right: 100%;
+            top: 8px;
+        }
+
+        .sender {
+            font-size: 12px;
+            color: #555;
+            margin-top: 5px;
+            margin-bottom: auto;
+            position: relative;
+            text-align: right;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    Wishes: From our hearts to yours ❤️
+</div>
+<audio id = "song">
+    <source src="music.mp3">
+</audio>
+
+<script>
+    window .addEventListener('click', () =>{
+        document.getElementById("song").play();
+    });
+</script>
+<div id="messages-container">
+    <!-- Example messages -->
+    <div class="message-container">
+        <div class="message received">
+            Thank you for being awesome siblings! Wishing you a lifetime of happiness together.
+
+            <div class="sender">-- Uday & Yamini ❤</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message sent">
+            Happy birthday to the dynamic duo, Pratyush and Tejaswi. God has finally decided to match the birthdays also for the perfect couple. Enjoy your whole life having the same birthdays together with happiness and laughter!🎂❤️✨
+
+            <div class="sender">-- From Bangalore Tata</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message received">
+            Birthday wishes to dear Pratyush and Teju on your special day. Wishing you both a wonderful birthday full of joy and happiness. Lots of love and good wishes on this special day.
+
+            <div class="sender">-- Lata & Babji 💐</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message sent">
+            Happy birthday to a newly married couple teju and pratush
+We wish both of you many many happy returns of the day 🌹🌹🌹🌹🌹
+
+Meeru jeevitantam Ila nuru puttina roju pandagalu sukha santhoshalatho, aayur aarogya aishwaryalatho chesukovali🙌🏻. Jeevithanni panchukovadame kaakunda pratisari puttina rojuki cake kuda panchukuntu 😜🍰happy ga debbaladukokuda enjoy cheyandi🎉🥳
+
+
+            <div class="sender">-- Mohan & Gayatri ❤</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message received">
+
+            Teju ki, Pratyush ki Putina Roju Subhakankshalu, Miru iddaru Happy, Happy, Happy Ga, ilaaga Vandasamvatsaralu Putina Roju pandagalu chesukovali. Happy,  Happy Ga gadapali, Pratyushki, Teju ki Putina Roju Subhakankshalu
+
+            <div class="sender">-- From Ammamma 💐</div>
+        </div>
+    </div>
+
+
+    <div class="message-container">
+        <div class="message sent">
+            May the light of your love grow stronger with every year that goes by.
+
+            <div class="sender">-- Geetha & Honey ❤</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message received">
+            🎉🎊🎂🍫Combined Happy Birthday wishes Praju💐💐. 
+
+            🎉Many many happy returns of the day Pratyush and Tejaswi. May you have a wonderful year ahead. As both of you celabrate together, let this be two lifes and one soul. Let the joys double and celebrations multiply. Wishing you a happy and wonderful life 💐.
+            
+            <div class="sender">-- Padmatta ❤️</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message sent">
+            Dear Pratyush and Tejaswi,
+We wish you a happy and wonderful birthday and, as both of you share the same birthday, all best wishes to be multiplied with happiness and be squared with magnificent and beautiful moments ahead! With heart full blessings to both of you on this special day!🎁
+
+            <div class="sender">-- Bujji Babai & Prasanna Pinni with ❤</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message received">
+            A birthday comes once a year, 🎉 So celebrate it your favorite way,With loved ones near and far away. ❤️ Have a day that's extra nice.
+            Happy birthday to Pratyush & Teju! 🎂🎈"
+
+            <div class="sender">-- Lakshmatta & BK Rao Mamayya 🙌</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message sent">
+            Happy Birthday to our incredible little one,Teju and her amazing partner in crime,Pratyush! 🥳🥳As you celebrate another year of love and happiness together, we hope your day is filled with everything that brings you joy - especially that coveted cake-cutting moment! 😜Here's to embracing each other's quirks and preferences, because that's what makes your bond so special💕. May your day be filled with love, laughter, and of course, plenty of cake. 🍰With lots of love and warmest wishes
+
+
+            <div class="sender">-- Harish & Yamini 💐</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message received">
+            Many happy returns of your double special day… wishing you a lifetime of togetherness, love, and prosperity. May you encourage and support each other to achieve your goals and cherish the journey en route ..
+
+            <div class="sender">-- Pooja & Sagar ❤️</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message sent">
+            Happy Birthday Teju! Happy Birthday Praty!  Congratulations on your first Birthday🧁 celebration as Husband & Wife 👩‍❤‍👨 and also as yourselves with each other! Wish you both lots of love❤, luck🍀, cake🎂 & happiness😊
+
+            <div class="sender">--  Deepakka 🙋🏻‍♀, Karthikbava 🧘🏻‍♂ & Neeraj 😎🤸🏻‍♂!
+            </div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message received">
+            "Happy birthday, Pratyu and Teju! 🎉 May your special day be filled with joy, laughter, and plenty of cake! 🎂 Wishing you both a lifetime of love and happiness as you celebrate together. Here's to creating wonderful memories and embarking on new adventures! 🥳🎈
+            <div class="sender">-- Shiva & Sony 💐</div>
+        </div>
+    </div>
+
+
+    <div class="message-container">
+        <div class="message sent">
+            Praty and Teju, it's double the celebration from now on! Wishing you both a day filled with double the joy, double the love and double the happiness. Cheers to many more years of celebrating your special day together!
+            ❤️
+            <div class="sender">--  Pinky🤗</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message received">
+            Wish you a many many happy returns of the day Pratyu and Teju! May you cherish each and every moment together, forever! 🎉🥳🥳🍾
+            <div class="sender">--Neeru 😎</div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message sent">
+            "Happy Birthday to the Pratyush Anna and Teju Akka, who decided to share cake, presents, and now, birthdays for life! May your joint celebration be as harmonious as your love❤Cheers to double the laughter, double the joy, and double the cake! 💞🎂🥳            
+            ❤️
+            <div class="sender">--  Shobitha 🧘🏻‍♂ </div>
+        </div>
+    </div>
+    <!-- Add more messages here with the format above -->
+</div>
+
+</body>
+</html>
